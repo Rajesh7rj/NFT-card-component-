@@ -1,0 +1,157 @@
+body{
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit";
+  color: white;
+
+}
+h1{
+  font-size: 22px;
+}
+
+h1:hover{
+  color:hsl(178, 100%, 50%);
+}
+
+h3{
+  font-weight: 400;
+}
+
+p{
+  font-size: 15px;
+  color: hsl(215, 51%, 70%);
+}
+
+pre{
+  font-family: "Outfit";
+  font-size: 15px;
+  color: hsl(215, 51%, 70%);
+}
+
+hr{
+  border-top: none;
+  border-color: hsl(215, 32%, 27%);
+}
+
+img{
+  margin: 1.7rem  1.7rem 0 ;
+  border-radius: 10px;
+  width: 83%;
+}
+
+.hover-icon {
+  margin: 1.7rem  1.7rem 0 ;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: hsla(178, 100%, 50%, 0.466); 
+}
+
+.image-container:hover .hover-icon {
+ opacity: 1; 
+}
+
+.image-container {
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  opacity: 1;
+
+}
+
+.icon {
+  width: 15%;
+  position: absolute;
+  top: 5.5rem;
+  left: 7rem;
+  display: flex; 
+  align-self: center;
+  justify-content: center;
+ } 
+
+.main{
+  margin: 8rem 35rem;
+}
+
+.card{
+  border-radius: 20px;
+  width: 20rem;
+  border: 1px solid hsl(217, 54%, 11%);
+  background-color: hsl(216, 50%, 16%);
+}
+
+.card-body{
+  margin: 1.6rem;
+}
+
+.eth{
+  color: hsl(178, 100%, 50%);
+}
+
+.footer{
+  text-align: center;
+  /* padding-bottom: 0.8px; */
+}
+
+.avatar{
+  float: left;
+  margin: 0% ;
+  border-radius: 100%;
+  border: white 1px solid;
+  margin-left: 0%;
+  width: 12%;
+}
+
+.avatar-text{
+  padding: 4% 10% 1.5%;
+}
+
+.avatar-name{
+  color: white;
+}
+
+.avatar-name:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width:500px) {
+  .main{
+    display: block;
+    margin-top: 5rem ;
+    margin-left: 4rem;
+    margin-right: auto;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  h1{
+    font-weight: 400;
+  }
+  img{
+    margin:1.8rem 1.8rem 0 1.8rem ;
+  }
+  p,pre{
+    font-weight: 300;
+  }
+  
+  .card{
+    border-radius: 20px;
+    width: 22rem;
+  }
+  .avatar-text{
+    padding: 4% 20% 1.5% 0%;
+    
+  }
+  .icon{
+    position: absolute;
+    top: 6rem;
+  left: 7.8rem;
+  }
+}
